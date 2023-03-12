@@ -1,37 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <title>LastFM</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body>
+  <header>
+    <a href="./index.html" class="logo">
+      <img src="https://i.ibb.co/2vYw0cW/logo.png" />
+    </a>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="playbar">
+      <img class="playbar_icon" src="https://i.ibb.co/tqgd8kD/player-default-album-430223706b14.png" />
+      <button class="playbar_button"><img src="https://i.ibb.co/6bpYB6y/player-previous.png"></button>
+      <button class="playbar_button"><img src="https://i.ibb.co/VwkbxxX/player-play.png"></button>
+      <button class="playbar_button"><img src="https://i.ibb.co/cTx6xhG/player-next.png"></button>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <nav class="nav">
+      <a href="./search.html" class="nav-search"></a>
+      <a href="/" class="nav-item">Live</a>
+      <a href="./index.html" class="nav-item">Music</a>
+      <a href="/" class="nav-item">Charts</a>
+      <a href="/" class="nav-item">Events</a>
+      <a href="/" class="nav-item">Features</a>
+      <a href="/" class="nav-avatar"></a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="main_heading">Music</h1>
+      <div class="main_section"> 
+        <h2 class="main_sectionHeading">Hot right now</h2>
+        <hr class="main_line" color="#FF0000" size= "3">
+        <ul class="main_Arts">
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main_ArtCard">
+              <img src="https://i.ibb.co/6gpH4nH/y-WXOLKt1v-Ilo-LPsg-Eqp-Ageqm-HTo-960.jpg" class="main_ArtImage" />
+              <p class="main_ArtName">Nejromonah Feofan</p>
+              <ul class="main_genresList">
+                <li><a class="main_genreTag" href="/">folk</a></li>
+                <li><a class="main_genreTag" href="/">drum-n-bass</a></li>
+                <li><a class="main_genreTag" href="/">electronic</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="main_section">
+        <h2 class="main_sectionHeading">Popular tracks</h2>
+        <hr class="main_line" color="#FF0000" size= "3">
+        <ul class="main_trackList">
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main_trackCard">
+              <img src="https://i.ibb.co/jvM048X/q77zz2luhpo.jpg" class="main_trackCover" />
+              <div class="main_trackInfo">
+                <h4 class="main_trackName">Min yaratam sine, Tatarstan</h4>
+                <a href="/" class="main_trackArtName">Salavat Fathutdinov</a>
+                <ul class="main_genresList">
+                  <li><a class="main_genreTag" href="/">pop</a></li>
+                  <li><a class="main_genreTag" href="/">traditional</a></li>
+                  <li><a class="main_genreTag" href="/">folk</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__Links">
+        <div>
+            <div class="footer__title">COMPANY</div>
+            <ul>
+                <li class="footer__li"><a href="" class="footer__otherLink">About Last.fm</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Contact Us</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Jobs</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="footer__title">HELP</div>
+            <ul>
+                <li class="footer__li"><a href="" class="footer__otherLink">Track My Music</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Community Support</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Community Guidelines</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Help</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="footer__title">GOODIES</div>
+            <ul>
+                <li class="footer__li"><a href="" class="footer__otherLink">Download Scrobbler</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Developer API</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Free Music Downloads</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Merchandise</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="footer__title">ACCOUNT</div>
+            <ul>
+                <li class="footer__li"><a href="" class="footer__otherLink">Sign Up</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Log In</a></li>
+                <li class="footer__li"><a href="" class="footer__otherLink">Subscribe</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="footer__title">FOLLOW US</div>
+            <ul>
+                <li class="footer__li"><a class="footer__otherLink">Facebook</a></li>
+                <li class="footer__li"><a class="footer__otherLink">Twitter</a></li>
+                <li class="footer__li"><a class="footer__otherLink">Instagram</a></li>
+                <li class="footer__li"><a class="footer__otherLink">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="footer__hr"></hr>
+
+    <div class="footer__bottom">
+      <div class="footer__column">
+        <ul class="footer__lang">
+          <li><button class="footer__item-active">English</button></li>
+          <li><button class="footer__item">Deutsch</button></li>
+          <li><button class="footer__item">Español</button></li>
+          <li><button class="footer__item">Français</button></li>
+          <li><button class="footer__item">Italiano</button></li>
+          <li><button class="footer__item">日本語</abutton></li>
+          <li><button class="footer__item">Polski</button></li>
+          <li><button class="footer__item">Português</button></li>
+          <li><button class="footer__item">Русский</button></li>
+          <li><button class="footer__item">Svenska</button></li>
+          <li><button class="footer__item">Türkçe</button></li>
+          <li><button class="footer__item">简体中文</button></li>
+        </ul>
+
+        <div class="footer__time-zone">
+          <p>Time zone: </p>
+          <strong>Europe/Moscow</strong>
+        </div>
+
+        <ul class="footer__legal">
+          <li><a >CBS Interactive © 2023 Last.fm Ltd. All rights reserved</a></li>
+          <li><a >Terms of Use</a></li>
+          <li><a >Privacy Policy</a></li>
+          <li><a >Legal Policies</a></li>
+          <li><a >Cookie Details</a></li>
+          <li><a >Jobs at ViacomCBS</a></li>
+          <li><a >Last.fm Music</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column footer__logo">
+        <p>Audioscrobbler</p>
+        <img src="https://i.ibb.co/Z1JksC6/footer-logo-2x-49ca51948b0a.png" />
+      </div>
+    </div>
+</footer>
+</body>
 </html>
